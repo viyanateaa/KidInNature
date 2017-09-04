@@ -3,63 +3,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kidsinnature.tensaii.com.kidinnature.Login">
+    tools:context="kidsinnature.tensaii.com.kidinnature.MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp" >
 
 
 
 
 
-    <EditText
-        android:layout_width="215dp"
-        android:layout_height="43dp"
-        android:text="Namn"
-
-
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        android:id="@+id/editText"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.256" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Namn" />
 
     <EditText
-        android:layout_width="216dp"
-        android:layout_height="44dp"
-        android:text="Lösenord"
-        android:layout_marginLeft="71dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/etName"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lösenord" />
 
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.381"
-        android:id="@+id/editText2" />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
 
     <Button
-        android:layout_width="215dp"
+        android:id="@+id/btLogin"
+        android:layout_width="343dp"
         android:layout_height="43dp"
-        android:text="Logga in "
-
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+
+
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="Logga in "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        android:id="@+id/button" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
+    <TextView
+        android:id="@+id/RegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Registrera här "
+        android:textStyle="bold" />
 
 
 </LinearLayout>
